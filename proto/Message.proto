@@ -8,5 +8,4 @@ message Message {
   string receiver = 3;
   string content = 4;
   string timestamp = 5;
-  string type = 6;
 }
