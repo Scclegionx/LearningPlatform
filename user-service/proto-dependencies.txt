@@ -1,1 +1,1 @@
-Message.proto
+proto/Message.proto
