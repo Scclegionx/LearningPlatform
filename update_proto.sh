@@ -2,7 +2,8 @@
 
 # 1. Lấy danh sách file .proto bị thay đổi
 echo "Detecting modified .proto files..."
-MODIFIED_PROTO_FILES=$(git diff --name-only HEAD~1 | grep '\.proto')
+#MODIFIED_PROTO_FILES=$(git diff --name-only HEAD~1 | grep '\.proto')
+MODIFIED_PROTO_FILES=$(git diff --name-only --staged | grep '\.proto')
 
 if [ -z "$MODIFIED_PROTO_FILES" ]; then
   echo "No .proto files changed. Exiting."
